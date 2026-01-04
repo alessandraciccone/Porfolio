@@ -30,7 +30,7 @@ const NavBar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
             <a
-              href="/"
+              href="/aboutme"
               className="text-[#b48cff] hover:text-[#d4b3ff] transition-colors duration-300 text-sm font-medium"
             >
               Chi Sono
@@ -189,7 +189,7 @@ const NavBar = () => {
       >
         <div className="px-4 pt-2 pb-4 space-y-1 bg-black/98 border-t border-[#6a0dad]/40">
           <a
-            href="/"
+            href="/aboutme"
             className="block px-3 py-2.5 text-[#b48cff] hover:bg-[#6a0dad]/20 hover:text-[#d4b3ff] rounded-md transition-all duration-200"
             onClick={() => setIsMobileMenuOpen(false)}
           >
