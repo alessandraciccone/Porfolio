@@ -8,6 +8,7 @@ import CorgiConnection from "./components/CorgiConnection";
 import Contatti from "./components/Contatti";
 import GDrop from "./components/GDrop";
 import MovieRandom from "./components/MovieRandom";
+import HappyMeteo from "./components/HappyMeteo";
 import bg from "./assets/img/bg.png";
 function App() {
   useEffect(() => {
@@ -27,6 +28,9 @@ function App() {
           <Route path="/projects/corgi" element={<CorgiConnection />} />
           <Route path="/projects/gamedrop" element={<GDrop />} />
           <Route path="/projects/movierandom" element={<MovieRandom />} />
+          <Route path="/projects/happymeteo" element={<HappyMeteo />} />
+          <Route path="/projects/happymeteo" element={<HappyMeteo />} />
+
           <Route path="/contact" element={<Contatti />} />
         </Routes>
       </BrowserRouter>
