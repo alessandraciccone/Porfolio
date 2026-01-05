@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const netflixImages = [
   {
-    src: "/src/assets/img/NetflixImg/1img.png",
+    src: "/NetflixImg/1img.png",
     desc: "Homepage con anteprime e suggerimenti personalizzati",
   },
   {
-    src: "/src/assets/img/NetflixImg/2imgandfooter.png",
+    src: "/NetflixImg/2imgandfooter.png",
     desc: "Schermata del player video e footer con informazioni aggiuntive",
   },
 ];

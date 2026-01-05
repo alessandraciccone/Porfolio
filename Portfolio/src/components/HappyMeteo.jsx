@@ -2,15 +2,15 @@ import React, { useState } from "react";
 
 const happyMeteoImages = [
   {
-    src: "/src/assets/img/HappyM/HomePage.png",
+    src: "/HappyM/HomePage.png",
     desc: "Homepage con Search Bar per inserire la città desiderata",
   },
   {
-    src: "/src/assets/img/HappyM/ResultPage.png",
+    src: "/HappyM/ResultPage.png",
     desc: "Pagina dei risultati meteo dettagliati",
   },
   {
-    src: "/src/assets/img/HappyM/Footer.png",
+    src: "/HappyM/Footer.png",
     desc: "Footer con informazioni aggiuntive",
   },
 ];

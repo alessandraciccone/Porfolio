@@ -5,19 +5,19 @@ const MovieRandom = () => {
 
   const movieImages = [
     {
-      src: "/src/assets/img/MRandom/HomePage.png",
+      src: "/MRandom/HomePage.png",
       desc: "Homepage con selezione film casuale",
     },
     {
-      src: "/src/assets/img/MRandom/RwstulPage.png",
+      src: "/MRandom/RwstulPage.png",
       desc: "Pagina con dettagli del film apparso randomicamente, tra cui titolo, locandina, cast e trama",
     },
     {
-      src: "/src/assets/img/MRandom/button.png",
+      src: "/MRandom/button.png",
       desc: "Pulsante per generare un film casuale o per andare al trailer del film generato",
     },
     {
-      src: "/src/assets/img/MRandom/Footer.png",
+      src: "/MRandom/Footer.png",
       desc: "Footer con informazioni aggiuntive",
     },
   ];

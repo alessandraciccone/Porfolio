@@ -5,23 +5,23 @@ const GDrop = () => {
 
   const gdropImages = [
     {
-      src: "/src/assets/img/GDrop/Home.png",
+      src: "/GDrop/Home.png",
       desc: "Homepage del gioco con navigazione principale",
     },
     {
-      src: "/src/assets/img/GDrop/RegistrazioneELogin.png",
+      src: "/GDrop/RegistrazioneELogin.png",
       desc: "Schermata di registrazione e login",
     },
     {
-      src: "/src/assets/img/GDrop/SearchBar.png",
+      src: "/GDrop/SearchBar.png",
       desc: "Barra di ricerca per trovare giochi",
     },
     {
-      src: "/src/assets/img/GDrop/ResultPage.png",
+      src: "/GDrop/ResultPage.png",
       desc: "Pagina dei risultati di ricerca",
     },
     {
-      src: "/src/assets/img/GDrop/Footer.png",
+      src: "/GDrop/Footer.png",
       desc: "Footer con informazioni e link utili",
     },
   ];
