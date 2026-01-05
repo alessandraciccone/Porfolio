@@ -10,7 +10,7 @@ const Aboutme = () => {
           className="w-32 h-32 rounded-full mx-auto mb-6 border-2 border-purple-400 shadow-lg"
         />
         <h2 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-8 drop-shadow-lg">
-          Chi sono
+          Chi sono?
         </h2>
 
         <div className="flex justify-center mb-8">
