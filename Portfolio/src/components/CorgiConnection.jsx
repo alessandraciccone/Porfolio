@@ -50,7 +50,7 @@ const CorgiConnection = () => {
   return (
     <section id="corgi-connection" className="py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 mb-8 drop-shadow-lg">
+        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-purple-300 via-purple-400 to-purple-500 mb-8 drop-shadow-lg">
           Corgi Connection
         </h2>
         <div>
@@ -61,7 +61,7 @@ const CorgiConnection = () => {
             un'esperienza utente eccezionale.
           </p>
           <div className="mb-4">
-            <h3 className="text-xl font-semibold text-yellow-500 mb-2">
+            <h3 className="text-xl font-semibold text-purple-300 mb-2">
               Tecnologie utilizzate:
             </h3>
             <ul className="list-disc list-inside text-gray-400">
@@ -93,7 +93,7 @@ const CorgiConnection = () => {
 
           {/* Carousel Section */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-center text-orange-500 mb-6">
+            <h3 className="text-2xl font-bold text-center text-purple-300 mb-6">
               Galleria Corgi Connection
             </h3>
             <div className="relative overflow-hidden">
