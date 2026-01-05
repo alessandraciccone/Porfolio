@@ -34,7 +34,11 @@ const GDrop = () => {
             inserire il tuo mood nella searchbar. In base all’umore selezionato,
             il sistema ti propone una serie di giochi adatti a come ti senti.
             Cliccando su “Gioca ora”, vieni reindirizzato direttamente al sito
-            del gioco scelto.
+            del gioco scelto. Ho creato un servizio proxy che astrae l’API
+            FreeToGame: il frontend interagisce con un endpoint locale, mentre
+            il backend gestisce la comunicazione con l’API esterna e restituisce
+            i dati in formato JSON. Questo approccio elimina problemi di CORS e
+            mantiene il codice più modulare e sicuro.
           </p>
           <div className="mb-4">
             <h3 className="text-xl font-semibold text-purple-300 mb-2">
