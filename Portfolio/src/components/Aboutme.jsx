@@ -1,5 +1,4 @@
 import meme from "../assets/img/meme.png";
-import CV from "/MyCv.pdf";
 const Aboutme = () => {
   return (
     <section id="about-me" className="py-16">
