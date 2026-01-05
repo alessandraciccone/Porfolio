@@ -10,6 +10,8 @@ import GDrop from "./components/GDrop";
 import MovieRandom from "./components/MovieRandom";
 import HappyMeteo from "./components/HappyMeteo";
 import Netflix from "./components/Netflix";
+import DermaCode from "./components/DermaCode";
+import RapportoPro from "./components/RapportoPro";
 import bg from "./assets/img/bg.png";
 function App() {
   useEffect(() => {
@@ -31,7 +33,11 @@ function App() {
           <Route path="/projects/movierandom" element={<MovieRandom />} />
           <Route path="/projects/happymeteo" element={<HappyMeteo />} />
           <Route path="/projects/happymeteo" element={<HappyMeteo />} />
+
           <Route path="/projects/netflix" element={<Netflix />} />
+
+          <Route path="/projects/dermacode" element={<DermaCode />} />
+          <Route path="/projects/rapportopro" element={<RapportoPro />} />
 
           <Route path="/contact" element={<Contatti />} />
         </Routes>
