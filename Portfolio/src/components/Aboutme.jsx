@@ -1,5 +1,5 @@
 import meme from "../assets/img/meme.png";
-import cv from "../assets/cv.pdf";
+import MyCv from "../assets/MyCv.pdf";
 const Aboutme = () => {
   return (
     <section id="about-me" className="py-16">
@@ -15,7 +15,7 @@ const Aboutme = () => {
 
         <div className="flex justify-center mb-8">
           <a
-            href={cv}
+            href={MyCv}
             download="Alessandra_Ciccone_CV.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
           >
@@ -69,13 +69,13 @@ const Aboutme = () => {
           necessaria.
           <br />
           <br />
-          <strong className="text-purple-300">Lingue</strong>
+          <strong className="text-yellow-400">Lingue</strong>
           <br />• <span className="text-teal-500">Inglese</span>: livello
           intermedio (B1/B2)
           <br />• <span className="text-cyan-500">Spagnolo</span>: livello base
           <br />
           <br />
-          <strong className="text-purple-300">Obiettivi professionali</strong>
+          <strong className="text-yellow-400">Obiettivi professionali</strong>
           <br />• in presenza a Pescara e dintorni
           <br />• ibrido tra Pescara e Roma
           <br />• full remote per progetti nazionali e internazionali
