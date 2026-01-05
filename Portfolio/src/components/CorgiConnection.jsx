@@ -45,6 +45,10 @@ const CorgiConnection = () => {
       src: "/src/assets/img/CorgiC/cosedafare.png",
       desc: "Lista delle cose da fare regione per regione. I dati sono richiamati dal backend",
     },
+    {
+      src: "/src/assets/img/CorgiC/footer.png",
+      desc: "Footer con link e informazioni utili",
+    },
   ];
 
   return (
