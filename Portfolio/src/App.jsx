@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Aboutme from "./components/Aboutme";
 import Footer from "./components/Footer";
+import CorgiConnection from "./components/CorgiConnection";
 import bg from "./assets/img/bg.png";
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/projects/corgi" element={<CorgiConnection />} />
         </Routes>
       </BrowserRouter>
       <Footer />
