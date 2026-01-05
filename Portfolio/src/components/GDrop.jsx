@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const GDrop = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -46,7 +46,12 @@ const GDrop = () => {
             inserire il tuo mood nella searchbar. In base all’umore selezionato,
             il sistema ti propone una serie di giochi adatti a come ti senti.
             Cliccando su “Gioca ora”, vieni reindirizzato direttamente al sito
-            del gioco scelto.
+            del gioco scelto. Ho implementato un endpoint proxy in Spring Boot
+            che permette al frontend di richiamare l’API pubblica FreeToGame
+            senza problemi di CORS. <br />
+            Il server riceve la richiesta, costruisce l’URL verso l’API esterna,
+            inoltra la chiamata e restituisce al client il JSON già pronto
+            all’uso.
           </p>
           <div className="mb-4">
             <h3 className="text-xl font-semibold text-purple-300 mb-2">
@@ -57,7 +62,8 @@ const GDrop = () => {
                 <span className="font-bold">Frontend</span>: React, TailwindCSS
               </li>
               <li>
-                <span className="font-bold">Backend</span>: Java, Spring Boot
+                <span className="font-bold">Backend</span>: Java, Spring Boot.{" "}
+                <br />{" "}
               </li>
               <li>
                 <span className="font-bold">Database</span>: PostegresSQL
@@ -108,7 +114,10 @@ const GDrop = () => {
 
           {/* Modal for full-size image */}
           {selectedImage && (
-            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeModal}>
+            <div
+              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+              onClick={closeModal}
+            >
               <div className="relative max-w-4xl max-h-full p-4">
                 <img
                   src={selectedImage.src}
