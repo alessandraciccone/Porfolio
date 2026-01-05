@@ -1,4 +1,8 @@
+import React, { useState } from "react";
+
 const CorgiConnection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const corgiImages = [
     {
       src: "/src/assets/img/CorgiC/registrazione.png",
@@ -46,6 +50,14 @@ const CorgiConnection = () => {
       desc: "Lista delle cose da fare regione per regione. I dati sono richiamati dal backend",
     },
   ];
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <section id="corgi-connection" className="py-16">
@@ -106,8 +118,9 @@ const CorgiConnection = () => {
                     <img
                       src={corgi.src}
                       alt={`Screenshot ${index + 1}: ${corgi.desc}`}
-                      className="w-full h-40 object-cover rounded-lg mb-3"
+                      className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                       loading="lazy"
+                      onClick={() => openModal(corgi)}
                     />
                     <p className="text-sm text-gray-300 text-center">
                       {corgi.desc}
@@ -117,6 +130,25 @@ const CorgiConnection = () => {
               </div>
             </div>
           </div>
+
+          {/* Modal for full-size image */}
+          {selectedImage && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeModal}>
+              <div className="relative max-w-4xl max-h-full p-4">
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.desc}
+                  className="max-w-full max-h-full object-contain"
+                />
+                <button
+                  className="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75"
+                  onClick={closeModal}
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
