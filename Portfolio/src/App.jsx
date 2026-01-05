@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Aboutme from "./components/Aboutme";
 import Footer from "./components/Footer";
 import CorgiConnection from "./components/CorgiConnection";
+import Contatti from "./components/Contatti";
 import bg from "./assets/img/bg.png";
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/aboutme" element={<Aboutme />} />
           <Route path="/projects/corgi" element={<CorgiConnection />} />
+          <Route path="/contact" element={<Contatti />} />
         </Routes>
       </BrowserRouter>
       <Footer />
