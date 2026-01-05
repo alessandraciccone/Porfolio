@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const CorgiConnection = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -137,7 +137,10 @@ const CorgiConnection = () => {
 
           {/* Modal for full-size image */}
           {selectedImage && (
-            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeModal}>
+            <div
+              className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+              onClick={closeModal}
+            >
               <div className="relative max-w-4xl max-h-full p-4">
                 <img
                   src={selectedImage.src}
