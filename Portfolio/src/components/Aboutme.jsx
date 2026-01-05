@@ -11,11 +11,11 @@ const Aboutme = () => {
         <h2 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-8 drop-shadow-lg">
           Chi sono?
         </h2>
-
         <div className="flex justify-center mb-8">
           <a
             href="/MyCv.pdf"
-            download="Alessandra_Ciccone_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
           >
             <svg
