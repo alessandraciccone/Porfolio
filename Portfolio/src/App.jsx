@@ -9,6 +9,7 @@ import Contatti from "./components/Contatti";
 import GDrop from "./components/GDrop";
 import MovieRandom from "./components/MovieRandom";
 import HappyMeteo from "./components/HappyMeteo";
+import Netflix from "./components/Netflix";
 import bg from "./assets/img/bg.png";
 function App() {
   useEffect(() => {
