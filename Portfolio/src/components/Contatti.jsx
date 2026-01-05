@@ -56,8 +56,8 @@ const Contatti = () => {
         <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-red-500 mb-8 drop-shadow-lg">
           Contatti
         </h2>
-        <div className="bg-purple-100 rounded-lg shadow-lg p-6">
-          <p className="text-lg text-gray-600 mb-6 text-center">
+        <div className="bg-yellow-50 rounded-lg shadow-lg p-6">
+          <p className="text-lg text-gray-600 mb-6 text-center font-bold">
             Hai domande o vuoi collaborare? Scrivimi!
           </p>
 
@@ -122,7 +122,7 @@ const Contatti = () => {
             <button
               type="submit"
               disabled={isSending}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mx-auto block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSending ? "Invio in corso..." : "Invia Messaggio"}
             </button>
