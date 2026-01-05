@@ -30,6 +30,7 @@ function App() {
           <Route path="/projects/movierandom" element={<MovieRandom />} />
           <Route path="/projects/happymeteo" element={<HappyMeteo />} />
           <Route path="/projects/happymeteo" element={<HappyMeteo />} />
+          <Route path="/projects/netflix" element={<Netflix />} />
 
           <Route path="/contact" element={<Contatti />} />
         </Routes>
