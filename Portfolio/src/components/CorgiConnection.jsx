@@ -5,52 +5,52 @@ const CorgiConnection = () => {
 
   const corgiImages = [
     {
-      src: "/src/assets/img/CorgiC/registrazione.png",
+      src: "/CorgiC/registrazione.png",
       desc: "Form di registrazione per nuovi utenti",
     },
 
     {
-      src: "/src/assets/img/CorgiC/login.png",
+      src: "/CorgiC/login.png",
       desc: "Schermata di login dell'applicazione",
     },
     {
-      src: "/src/assets/img/CorgiC/profilo.png",
+      src: "/CorgiC/profilo.png",
       desc: "Profilo utente personalizzato",
     },
     {
-      src: "/src/assets/img/CorgiC/post.png",
+      src: "/CorgiC/post.png",
       desc: "Creazione di un nuovo post",
     },
     {
-      src: "/src/assets/img/CorgiC/postdaleggere.png",
+      src: "/CorgiC/postdaleggere.png",
       desc: "Lettura e interazione con i post",
     },
     {
-      src: "/src/assets/img/CorgiC/searchbar.png",
+      src: "/CorgiC/searchbar.png",
       desc: "Barra di ricerca per contenuti presente su tutto il sito",
     },
     {
-      src: "/src/assets/img/CorgiC/searchbarresult.png",
+      src: "/CorgiC/searchbarresult.png",
       desc: "Risultati della ricerca",
     },
     {
-      src: "/src/assets/img/CorgiC/quiz.png",
+      src: "/CorgiC/quiz.png",
       desc: "Quiz divertente sui corgi",
     },
     {
-      src: "/src/assets/img/CorgiC/quizRisultati.png",
+      src: "/CorgiC/quizRisultati.png",
       desc: "Risultati del quiz completato",
     },
     {
-      src: "/src/assets/img/CorgiC/curiosità.png",
+      src: "/CorgiC/curiosità.png",
       desc: "Sezione curiosità sui corgi",
     },
     {
-      src: "/src/assets/img/CorgiC/cosedafare.png",
+      src: "/CorgiC/cosedafare.png",
       desc: "Lista delle cose da fare regione per regione. I dati sono richiamati dal backend",
     },
     {
-      src: "/src/assets/img/CorgiC/footer.png",
+      src: "/CorgiC/footer.png",
       desc: "Footer con link e informazioni utili",
     },
   ];
