@@ -51,6 +51,10 @@ const MovieRandom = () => {
               <li>
                 <span className="font-bold">Frontend</span>: React, Bootstrap
               </li>
+              <li>
+                <span className="font-bold">API</span>: The Movie Database
+                (TMDB)
+              </li>
             </ul>
           </div>
           <div className="flex justify-center space-x-4 mb-8">
