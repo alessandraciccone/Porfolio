@@ -44,7 +44,7 @@ const Aboutme = () => {
           solving, comunicazione efficace e gestione dello stress.
           <br />
           <br />
-          Nel febbraio 2025 ho deciso di dare una svolta alla mia carriera,
+          Nel febbraio 2025 ho deciso di dare una svolta alla mia carriera
           tornando alla mia vera passione: la tecnologia. Mi sono iscritta a un
           corso intensivo full‑time di Full Stack Development, presso Epicode,
           dove ho acquisito solide competenze in:
