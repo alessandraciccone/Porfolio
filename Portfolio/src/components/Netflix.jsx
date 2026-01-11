@@ -7,7 +7,7 @@ const netflixImages = [
   },
   {
     src: "/NetflixImg/2imgandfooter.png",
-    desc: "Schermata del player video e footer con informazioni aggiuntive",
+    desc: "Altri elementi e footer con informazioni aggiuntive",
   },
 ];
 
@@ -36,7 +36,7 @@ const Netflix = () => {
 
           <p className="text-sm text-center text-gray-400 mb-4">
             {" "}
-            I placeholder sono dovuto alla momentanea indisponibilità di alcune
+            I placeholder sono dovuti alla momentanea indisponibilità di alcune
             risorse.
           </p>
           <div className="mb-4">

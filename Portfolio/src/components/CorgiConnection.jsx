@@ -89,7 +89,7 @@ const CorgiConnection = () => {
                 <span className="font-bold">Backend</span>: Java, Spring
               </li>
               <li>
-                <span className="font-bold">Database</span>: Postgres
+                <span className="font-bold">Database</span>: PostgreSQL
               </li>
               <li>
                 <span className="font-bold">Autenticazione</span>: JWT
