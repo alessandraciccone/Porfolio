@@ -76,10 +76,10 @@ const NavBar = () => {
                     Movie Random
                   </a>
                   <a
-                    href="/projects/happymeteo"
+                    href="/projects/climatechange"
                     className="block px-4 py-2.5 text-sm text-[#b48cff] hover:bg-[#6a0dad]/20 hover:text-[#d4b3ff] transition-all duration-200"
                   >
-                    Happy Meteo
+                    Climate Change
                   </a>
                   <a
                     href="/projects/netflix"
