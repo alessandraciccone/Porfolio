@@ -1,30 +1,19 @@
 import React, { useState } from "react";
 
-const GDrop = () => {
+const ClimateChange = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const gdropImages = [
-    {
-      src: "/GDrop/Home.png",
-      desc: "Homepage del gioco con navigazione principale",
-    },
-    {
-      src: "/GDrop/RegistrazioneELogin.png",
-      desc: "Schermata di registrazione e login",
-    },
-    {
-      src: "/GDrop/SearchBar.png",
-      desc: "Barra di ricerca per trovare giochi",
-    },
-    {
-      src: "/GDrop/ResultPage.png",
-      desc: "Pagina dei risultati di ricerca",
-    },
-    {
-      src: "/GDrop/Footer.png",
-      desc: "Footer con informazioni e link utili",
-    },
-      ];
+  const climateImages = [
+    { src: "/ClimateC/FormL.png", desc: "Form lato sinistro" },
+    { src: "/ClimateC/FormR.png", desc: "Form lato destro" },
+    { src: "/ClimateC/Grafico.png", desc: "Grafico delle statistiche climatiche" },
+    { src: "/ClimateC/HomePage.png", desc: "Homepage dell'applicazione" },
+    { src: "/ClimateC/HomP.png", desc: "Schermata Home secondaria" },
+    { src: "/ClimateC/Preferiti.png", desc: "Pagina dei preferiti" },
+    { src: "/ClimateC/Profilo.png", desc: "Profilo utente" },
+    { src: "/ClimateC/Statistiche.png", desc: "Statistiche climatiche" },
+    { src: "/ClimateC/Trend.png", desc: "Trend climatici" },
+  ];
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -35,26 +24,17 @@ const GDrop = () => {
   };
 
   return (
-    <section id="g-drop" className="py-16">
+    <section id="climate-change" className="py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-purple-300 via-purple-400 to-purple-500 mb-8 drop-shadow-lg">
-          Game Drop
+        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-green-300 via-blue-400 to-blue-500 mb-8 drop-shadow-lg">
+          Climate Change
         </h2>
         <div>
           <p className="text-lg text-gray-400 mb-4">
-            GamDrop è un sito che, previa registrazione e login, ti permette di
-            inserire il tuo mood nella searchbar. In base all’umore selezionato,
-            il sistema ti propone una serie di giochi adatti a come ti senti.
-            Cliccando su “Gioca ora”, vieni reindirizzato direttamente al sito
-            del gioco scelto. Ho implementato un endpoint proxy in Spring Boot
-            che permette al frontend di richiamare l’API pubblica FreeToGame
-            senza problemi di CORS. <br />
-            Il server riceve la richiesta, costruisce l’URL verso l’API esterna,
-            inoltra la chiamata e restituisce al client il JSON già pronto
-            all’uso.
+            Climate Change è un'applicazione web che mostra dati e statistiche sul cambiamento climatico, con funzionalità di visualizzazione grafica e gestione profili utente.
           </p>
           <div className="mb-4">
-            <h3 className="text-xl font-semibold text-purple-300 mb-2">
+            <h3 className="text-xl font-semibold text-blue-300 mb-2">
               Tecnologie utilizzate:
             </h3>
             <ul className="list-disc list-inside text-gray-400">
@@ -62,20 +42,19 @@ const GDrop = () => {
                 <span className="font-bold">Frontend</span>: React, TailwindCSS
               </li>
               <li>
-                <span className="font-bold">Backend</span>: Java, Spring Boot.{" "}
-                <br />{" "}
+                <span className="font-bold">Backend</span>: Java, Spring Boot
               </li>
               <li>
-                <span className="font-bold">Database</span>: PostegresSQL
+                <span className="font-bold">Database</span>: PostgreSQL
               </li>
               <li>
                 <span className="font-bold">Autenticazione</span>: JWT
               </li>
-              </ul>
+            </ul>
           </div>
           <div className="flex justify-center space-x-4 mb-8">
             <a
-              href="https://github.com/alessandraciccone/GGame"
+              href="https://github.com/alessandraciccone/ClimateChange"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
@@ -86,25 +65,25 @@ const GDrop = () => {
 
           {/* Carousel Section */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-center text-purple-300 mb-6">
-              Galleria Game Drop
+            <h3 className="text-2xl font-bold text-center text-blue-300 mb-6">
+              Galleria Climate Change
             </h3>
             <div className="relative overflow-hidden">
               <div className="flex space-x-4 overflow-x-auto pb-4">
-                {gdropImages.map((gdrop, index) => (
+                {climateImages.map((img, index) => (
                   <div
                     key={index}
                     className="shrink-0 w-64 bg-black rounded-lg shadow-lg p-4"
                   >
                     <img
-                      src={gdrop.src}
-                      alt={`Game Drop ${index + 1}`}
+                      src={img.src}
+                      alt={`Screenshot ${index + 1}: ${img.desc}`}
                       className="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
                       loading="lazy"
-                      onClick={() => openModal(gdrop)}
+                      onClick={() => openModal(img)}
                     />
                     <p className="text-sm text-gray-300 text-center">
-                      {gdrop.desc}
+                      {img.desc}
                     </p>
                   </div>
                 ))}
@@ -139,4 +118,4 @@ const GDrop = () => {
   );
 };
 
-export default GDrop;
+export default ClimateChange;

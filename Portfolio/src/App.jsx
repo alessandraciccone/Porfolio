@@ -8,7 +8,7 @@ import CorgiConnection from "./components/CorgiConnection";
 import Contatti from "./components/Contatti";
 import GDrop from "./components/GDrop";
 import MovieRandom from "./components/MovieRandom";
-import HappyMeteo from "./components/HappyMeteo";
+import ClimateChange from "./components/ClimateChange";
 import Netflix from "./components/Netflix";
 import DermaCode from "./components/DermaCode";
 import RapportoPro from "./components/RapportoPro";
@@ -31,8 +31,7 @@ function App() {
           <Route path="/projects/corgi" element={<CorgiConnection />} />
           <Route path="/projects/gamedrop" element={<GDrop />} />
           <Route path="/projects/movierandom" element={<MovieRandom />} />
-          <Route path="/projects/happymeteo" element={<HappyMeteo />} />
-          <Route path="/projects/happymeteo" element={<HappyMeteo />} />
+          <Route path="/projects/climatechange" element={<ClimateChange />} />
 
           <Route path="/projects/netflix" element={<Netflix />} />
 
