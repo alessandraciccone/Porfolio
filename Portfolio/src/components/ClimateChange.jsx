@@ -4,15 +4,22 @@ const ClimateChange = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const climateImages = [
-    { src: "/ClimateC/FormL.png", desc: "Form lato sinistro" },
-    { src: "/ClimateC/FormR.png", desc: "Form lato destro" },
-    { src: "/ClimateC/Grafico.png", desc: "Grafico delle statistiche climatiche" },
+    { src: "/ClimateC/FormR.png", desc: "Form registrazione" },
+
+    { src: "/ClimateC/FormL.png", desc: "Form login" },
     { src: "/ClimateC/HomePage.png", desc: "Homepage dell'applicazione" },
-    { src: "/ClimateC/HomP.png", desc: "Schermata Home secondaria" },
-    { src: "/ClimateC/Preferiti.png", desc: "Pagina dei preferiti" },
-    { src: "/ClimateC/Profilo.png", desc: "Profilo utente" },
-    { src: "/ClimateC/Statistiche.png", desc: "Statistiche climatiche" },
+    { src: "/ClimateC/HomP.png", desc: "Schermata ricerca città" },
+
     { src: "/ClimateC/Trend.png", desc: "Trend climatici" },
+    { src: "/ClimateC/Statistiche.png", desc: "Statistiche climatiche" },
+
+    {
+      src: "/ClimateC/Grafico.png",
+      desc: "Grafico delle statistiche climatiche",
+    },
+    { src: "/ClimateC/Profilo.png", desc: "Profilo utente" },
+
+    { src: "/ClimateC/Preferiti.png", desc: "Pagina dei preferiti" },
   ];
 
   const openModal = (image) => {
@@ -31,7 +38,12 @@ const ClimateChange = () => {
         </h2>
         <div>
           <p className="text-lg text-gray-400 mb-4">
-            Climate Change è un'applicazione web che mostra dati e statistiche sul cambiamento climatico, con funzionalità di visualizzazione grafica e gestione profili utente.
+            Climate Change è un'applicazione web che mostra dati e statistiche
+            sul cambiamento climatico, con funzionalità di visualizzazione
+            grafica e aggiunta ai preferiti. Utilizza le Nasa Open APIs per
+            recuperare dati aggiornati sul clima globale. L'app consente agli
+            utenti di registrarsi, effettuare il login e salvare le loro
+            località preferite per monitorare i cambiamenti climatici nel tempo.
           </p>
           <div className="mb-4">
             <h3 className="text-xl font-semibold text-blue-300 mb-2">
@@ -49,6 +61,9 @@ const ClimateChange = () => {
               </li>
               <li>
                 <span className="font-bold">Autenticazione</span>: JWT
+              </li>
+              <li>
+                <span className="font-bold">API</span>: Nasa Open APIs
               </li>
             </ul>
           </div>
